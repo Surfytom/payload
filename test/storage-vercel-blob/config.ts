@@ -37,6 +37,8 @@ export default buildConfigWithDefaults({
   },
   plugins: [
     vercelBlobStorage({
+      enabled: false,
+      alwaysInsertFields: true,
       collections: {
         [mediaSlug]: true,
         [mediaWithPrefixSlug]: {
